@@ -1,0 +1,79 @@
+ @media (max-width: 768px) {
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+  }
+  button {
+    .navbar-toggle  {
+        padding: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 50px;
+        height: 40px;
+        margin-bottom: 25px;
+            span.icon-bar {
+                width: 44px;
+                height: 8px;
+                transition: 500ms ease-in-out;
+                    .mobile-nav-middle-bar {
+                        visibility: hidden;
+                        transition: none !important
+                    }
+                    .x-part-1 {
+                        transform: rotate(45deg);
+                        transform-origin: 20% 40%;
+                        -ms-transform: rotate(45deg);
+                        -ms-transform-origin: 20% 40%;
+                        -webkit-transform: rotate(45deg);
+                        -webkit-transform-origin: 20% 40%;
+                        position: relative;
+                        top: 3px;
+                        height: 5px !important;
+                    }
+                    .x-part-2 {
+                        transform: rotate(-45deg);
+                        transform-origin: 20% 40%;
+                        -ms-transform: rotate(-45deg);
+                        -ms-transform-origin: 20% 40%;
+                        -webkit-transform: rotate(-45deg);
+                        -webkit-transform-origin: 20% 40%;
+                        height: 5px !important;
+                    }
+                }
+            }
+        }
+        #navbar {
+            .navbar-header {
+                float: right;
+            }
+            .collapse.navbar-collapse {
+                position: fixed;
+                width: 100%;
+                left: 0;
+                background: rgba(255, 255, 255, 0.97);
+                z-index: 99;
+                width: 100% !important;
+                font-size: 24px;
+                text-decoration: none;
+                height: 100%;
+            ul#menu-header-menu {
+                width: 100%;
+                float: left;
+            li {
+                a { 
+                    line-height: 1.5;
+                    text-decoration: none;
+                    border-top: solid #666 1px;
+                    border-radius: 0;
+                }
+                &:nth-child(1) {
+                    a {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+}
